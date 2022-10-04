@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Contact us on Bomber League</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<script src="https://kit.fontawesome.com/00362f9421.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="contact.js"></script>
+</head>
+<body>
+<section class="header">     
+  <nav>
+ 
+      <div class="nav-links" id="navLinks">
+         
+      
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+              <i class="fa fa-lightbulb-o" id="lightoff"></i>
+              <i class="fa fa-lightbulb" id="lighton"></i>
+        
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="wears.html">WEARS</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+              <li><a href="findus.html">FIND US</a></li>
+          </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+  </nav>
+ 
+
+
+  <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu(){
+          navLinks.style.left = "0";
+      }
+      function hideMenu(){
+          navLinks.style.left ="220px";
+      }
+  </script>
+
+
+
+<div class="container" id="form">
+    <form action="">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Full Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" onfocus="myFunction(this)" id="fname" name="firstname" placeholder="Your name.." required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="email">Your Email</label>
+      </div>
+      <div class="col-75">
+        <input type="email"  id="email" name="email" placeholder="Your E-mail." required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Select Service</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="australia">Ad-Movies</option>
+          <option value="canada">Pictures</option>
+          <option value="usa">Bike-Service</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Describe shortly what <em>we</em></strong><br> can do for you!</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." required></textarea>
+      </div>
+      <div class="btnsub">
+        <input type="submit" value="Submit" onclick="myAlert()">
+      </div>
+    </div>
+    </form>
+
+</div>
+<div class="footer">
+  <h4>About us</h4>
+  <h3>Bomber League was founded in 2016 by a group of friends from a small town in Sweden. We grew quickly 
+      on social medias<BR> and now have over 30k followers on instagram
+      We started selling our own clothing line and produce Videos for different clients,  big & small.
+    </h3>
+      <div class="icons">
+          <a href="https://www.facebook.com/bombarligan/" target="_blank"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.instagram.com/bomber_league/" target="_blank"><i class="fa fa-instagram"></i></a>
+          <a href="https://www.youtube.com/c/BomberLeague" target="_blank"><i class="fa fa-youtube"></i></a>
+      </div>
+      <h4>Made with <i class="fa fa-heart-o"></i> By Daniel Pettersson</h4>
+</div>
+
+</section>
+</body>
+</html>

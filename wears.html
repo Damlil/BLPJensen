@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Bomber League Clothing</title>
+    <link rel="stylesheet" href="wears.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<script src="https://kit.fontawesome.com/00362f9421.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="wears.js"></script>
+</head>
+<body>
+
+<section class="header">     
+    <nav>
+   
+        <div class="nav-links" id="navLinks">
+           
+        
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <i class="fa fa-lightbulb-o" id="lightoff"></i>
+                <i class="fa fa-lightbulb" id="lighton"></i>
+          
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="wears.html">WEARS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="findus.html">FIND US</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+   
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.left = "0";
+        }
+        function hideMenu(){
+            navLinks.style.left ="220px";
+        }
+    </script>
+
+
+<section class="merchsection">
+
+
+
+    <div class="col">
+        <div class="hoodie">
+            <a href="https://roaderwear.com/sv/collections/bomber-league-1/products/bomber-league-hoodie" 
+            target="_blank" alt="roadwear.com">
+            <h1>Buy Hoodie</h1></a>
+        <img src="images/hoodie.jpg" alt="hoodie">    
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="snap">
+            <a href="https://roaderwear.com/sv/collections/bomber-league-1/products/bomber-league-snapback" 
+            target="_blank" alt="roadwear.com">
+            <h1>Buy Snapback</h1></a>
+        <img src="images/snapbacks.jpg" alt="snapback">       
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="t-shirt">
+            <a href="https://roaderwear.com/sv/collections/bomber-league-1/products/bomber-league-white-t-shirt" 
+            target="_blank" alt="roadwear.com">
+            <h1>Buy T-Shirt</h1></a>
+        <img src="images/tshirt2.jpg" alt="t-shirt">
+        </div>
+    </div>
+    <div class="footer">
+        <h4>About us</h4>
+        <h3>Bomber League was founded in 2016 by a group of friends from a small town in Sweden. We grew quickly 
+            on social medias<BR> and now have over 30k followers on instagram
+            We started selling our own clothing line and produce Videos for different clients,  big & small.
+          </h3>
+            <div class="icons">
+                <a href="https://www.facebook.com/bombarligan/" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/bomber_league/" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.youtube.com/c/BomberLeague" target="_blank"><i class="fa fa-youtube"></i></a>
+            </div>
+     
+
+ </section>
+</section>
+</body>
+</html>
